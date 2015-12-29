@@ -141,6 +141,43 @@
 						</script>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-xs-offset-4 col-xs-6">
+						<div class="form">
+							<div class="form-group">
+								<label class="control-label" for="directions-input">Take me to Tropicana</label>
+								<input type="text" class="manual-location form-control" id="directions-input" placeholder="Starting location">
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-6 col-xs-4">
+						<button type="button" class="btn btn-default" id="target">Get Directions</button>
+					</div>
+				</div>
+				<script>
+
+				<!-- This is not working need to fix the link from button to jquery -->
+				$(document).ready(function(){
+
+					console.log("test")
+
+								var startingLocation;
+								var destination = "Tropicana Outdoor Living";
+
+								$("#target").click(function(){
+									console.log("test");
+								});
+
+							function goToGoogleMaps(startingLocation, destination) {
+								window.location = "https://maps.google.com/maps?saddr=" + startingLocation + "&daddr=" + destination;
+							}
+
+				});
+				</script>
+
 			</div>
 		</div>
 
