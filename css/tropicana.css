@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600&subset=latin,latin-ext);
+
+/* Default */
+body {
+  padding-bottom: 40px;
+  color: #23A657;
+}
+
+h1,h2,h3,h4,h5,h6, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; 
+}
+
+strong {
+  font-weight: 600px;
+}
+
+/* Carousel */
+#slide1, #slide2, #slide3{
+	background-size: cover;
+}
+
+
+.navbar-nav {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#map-container {
+	height: 300px;
+}
+
+@media(min-width: 768px){
+	ul.nav li.dropdown:hover >ul.dropdown-menu{
+		display: block;
+	}
+}
+
+.navbar-top{
+	padding-right: 0;
+	padding-left: 0;
+	position: absolute;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	border-radius: 0;
+	top: 0;
+  	border-width: 0 0 1px;
+  	max-height: 340px;
+}
+
+/* portrait & landscape phone*/
+@media (max-width: 480px){
+
+	.content-wrapper {
+		padding-top: 50px;
+		
+	}
+
+	#slide1 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/sandiego2.jpg");
+	}
+
+	#slide2 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/diamond_bar.jpg");
+	}
+
+	#slide3 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/coronado.jpg");
+	}
+}
+
+/*Landscape phone to portrait tablet*/
+@media (max-width: 768px){
+
+	.content-wrapper {
+		padding-top: 50px;		
+	}
+
+
+	
+	#slide1 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/sandiego2.jpg");
+	}
+
+	#slide2 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/diamond_bar.jpg");
+	}
+
+	#slide3 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/coronado.jpg");
+	}
+}
+
+@media(max-width: 991px){
+	.calflame-container {
+	}
+}
+
+@media(max-width: 1200px){
+	.content-wrapper {
+		padding-top: 50px;
+		
+	}
+
+	#slide1 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/sandiego2.jpg");
+	}
+
+	#slide2 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/diamond_bar.jpg");
+	}
+
+	#slide3 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/coronado.jpg");
+	}
+}
+
+
+/*Large Desktop*/
+@media (min-width: 1200px){
+
+
+	#slide1 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/sandiego2.jpg");
+	}
+
+	#slide2 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/diamond_bar.jpg");
+	}
+
+	#slide3 {
+		min-height: 635px;
+		background-image: url("../images/lg-images/coronado.jpg");
+	}
+
+
+	.span3 {
+		padding-top: 80px;
+		height: 100%;
+		width: 20%;
+		background-color: #222;
+		padding-bottom: 140px;
+		padding-top: 150px;
+		position: fixed;
+	}
+
+	.content-wrapper {
+		padding-top: 50px;
+		padding-left: 20%;
+		
+	}
+}
+
+
+	.lead-header {
+		font-size: 3.75em;
+		color: #23A657;
+		text-shadow: 1px 1px 1px #000;
+	}
+
+	.lead {
+		font-size: 21px;
+		color: #23A657;
+		text-shadow: 1px 1px 1px #000;
+	}
+
+.carousel-inner {height: 100%;}
+.carousel .item img{
+	width: 100%;
+}
+.carousel-overlay {
+
+}
+
+.carousel-inner .btn-lg {
+	font-size: 1.75em;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	line-height: 1.333;
+}
+
+.carousel-inner .btn {
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: 4px;
+	border-left-width: medium;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: -moz-use-text-color;
+	border-right-color: -moz-use-text-color
+	border-bottom-color: #398439;
+	border-left-color: -moz-use-text-color;
+	border-radius: 6px;
+}
+
+.btn-success {
+	color: #fff;
+	background-color: #5CB85C;
+}
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-selected: none;
+	background-image: none;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+
+}
+
+.marketing {
+	color: #398439;
+}
+
+/*  Marketing CSS */
+.marketing .col-lg-4{
+	text-align: center;
+	padding-top: 40px;
+}
+
+.marketing .col-lg-4 h1{
+}
+
+.marketing .col-lg-4 p{
+	font-size: 16px;
+	line-height: 20px;
+}
