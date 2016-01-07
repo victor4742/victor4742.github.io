@@ -13,6 +13,30 @@
 
     	<link rel="stylesheet" type="text/css" href="css/tropicana.css">
     	<script type="text/javascript" src="js/tropicana.js"></script>
+    	<script src="https://maps.googleapis.com/maps/api/js"></script>
+   		<script>
+      		function initialize() {
+        	var mapCanvas = document.getElementById('map');
+        	 var myLatLng = {lat: 34.119127, lng: -117.812855};
+
+        	var mapOptions = {
+          		center: myLatLng,
+          		zoom: 17,
+          		mapTypeId: google.maps.MapTypeId.ROADMAP
+        	}
+
+        	var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        	
+
+        	var map = new google.maps.Map(mapCanvas, mapOptions);
+        	var marker = new google.maps.Marker({  
+        		position: myLatLng,
+        		map: map,
+        		title: "Tropicana Outdoor Living"
+        	});
+      	}
+      	google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 	</head>
 
 	<body>
@@ -70,20 +94,14 @@
 						<h1>Contact Us</h1>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<p><strong>949 North Cataract Ave, San Dimas, CA 91733</strong><br>
-						<strong>(909)599-4211<strong></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<p>We would love to hear from you! Please fill out this form and one of our representatives will get in touch with you shortly.</p>
-					</div>
-				</div>
 				
 				<div class="row">
+
 					<div class="col-md-4 col-xs-12">
+						<div class="col-xs-12" style="font-size: 16px;">
+							<p>We would love to hear from you! Please fill out this form and one of our representatives will get in touch with you shortly.</p>
+						</div>
+
 						<form role="form" action="mailto:romero4742@hotmail.com" method="post">
 							<div class="form-group">
 								<label class="control-label col-xs-2" for="name">Name</label>
@@ -100,7 +118,7 @@
 							</div>
 
 							<div class="form-group">
-								<label class="control-label col-xs-2" for="phone">Phone Number</label>
+								<label class="control-label col-xs-5" for="phone">Phone Number</label>
 								<div class="col-xs-11">
 									<input type="tel" class="form-control" id="phone" placeholder="Phone number">
 								</div>
@@ -114,9 +132,16 @@
 							</div>
 
 							<div class="form-group">
-								<div class="col-xs-offset-2 col-xs-10">
+								<div class="col-xs-offset-4 col-xs-10">
+									<br>
 									<button type="submit" id= class="btn btn-default">Submit</button>
 								</div>
+							</div>
+
+							<div class="col-xs-12" style="margin-top:7%;">
+								<br>
+								<p><strong>949 North Cataract Ave, San Dimas, CA 91733</strong><br>
+								<strong>(909)599-4211<strong></p>
 							</div>
 						</form>
 					</div>
@@ -126,23 +151,35 @@
 							<div class="col-xs-12">
 								<h4>Schedule an appointment and visit our shop! Get directions below.</h4>
 							</div>
-							<div class="col-xs-12">
-								<iframe 
-								width="100%"
-								height="400px"
-								frameborder="0"
-								style="border:0"
-								src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyAOj9jil-y0kJhGMw3KdvsJQWUxhNtuA8k&origin=Tropicana+outdoor+living&destination=Tropicana+Outdoor+Living'>
-								</iframe>
-							</div>	
 
+							<div id="map"></div>
 						</div>
 					</div>
+
+					
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-4 col-xs-8">
+						<br>
+						<form action="http://maps.google.com/maps" method="get" target="_blank">
+							Enter your starting address:
+							<input type="text" name="saddr" />
+							<input type="hidden" name="daddr" value="949 North Cataract Ave, San Dimas, CA 91733" />
+							<input type="submit" value="get directions" />
+						</form>
+					</div>
+				</div>
+
+				<div class="row">
+					
 				</div>
 				
 			<!-- end container fluid -->	
 			</div>
 		</div>
+
+		
+
 
 		<script src="js/jquery-2.1.1.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
