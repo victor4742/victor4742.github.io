@@ -85,7 +85,9 @@ strong {
 @media (max-width: 768px){
 
 	.content-wrapper {
-		padding-top: 50px;		
+		padding-top: 50px;
+		padding-left: 15%;
+		
 	}
 
 
@@ -120,9 +122,9 @@ strong {
 @media(max-width: 1200px){
 	.content-wrapper {
 		padding-top: 50px;
+		padding-left: 10%;
 		
 	}
-
 	#slide1 {
 		min-height: 635px;
 		max-width: 100%;
