@@ -91,7 +91,10 @@ strong {
 	}
 
 
-	
+	.grills-container {
+		padding-right: 15%;
+	}
+
 	#slide1 {
 		min-height: 635px;
 		max-width: 100%;
@@ -124,6 +127,9 @@ strong {
 		padding-top: 50px;
 		padding-left: 10%;
 		
+	}
+	.grills-container {
+		padding-right: 15%;
 	}
 	#slide1 {
 		min-height: 635px;
