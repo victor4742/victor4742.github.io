@@ -59,25 +59,22 @@ strong {
 		
 	}
 
-	#slide1 {
+	#slide1 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/sandiego2.jpg");
 	}
 
-	#slide2 {
+	#slide2 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/diamond_bar.jpg");
 	}
 
-	#slide3 {
+	#slide3 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/coronado.jpg");
 	}
 }
 
@@ -95,25 +92,22 @@ strong {
 		padding-right: 15%;
 	}
 
-	#slide1 {
+	#slide1 img {
 		min-height: 635px;
 		max-width: 100%;
-		height: auto;
-		background-image: url("../images/lg-images/sandiego2.jpg");
+		height: auto;	
 	}
 
-	#slide2 {
+	#slide2 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/diamond_bar.jpg");
 	}
 
-	#slide3 {
+	#slide3 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/coronado.jpg");
 	}
 }
 
@@ -131,25 +125,22 @@ strong {
 	.grills-container {
 		padding-right: 15%;
 	}
-	#slide1 {
+	#slide1  img{
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/sandiego2.jpg");
 	}
 
-	#slide2 {
+	#slide2 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/diamond_bar.jpg");
 	}
 
-	#slide3 {
+	#slide3 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/coronado.jpg");
 	}
 }
 
@@ -158,25 +149,22 @@ strong {
 @media (min-width: 1200px){
 
 
-	#slide1 {
+	#slide1 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/sandiego2.jpg");
 	}
 
-	#slide2 {
+	#slide2 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/diamond_bar.jpg");
 	}
 
-	#slide3 {
+	#slide3 img {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
-		background-image: url("../images/lg-images/coronado.jpg");
 	}
 
 
