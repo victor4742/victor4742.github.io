@@ -13,9 +13,9 @@
 
 */
 /** update sidebar */
-var lion = $('#lion').offset().top - 5;
-var calFlame = $('#cal-flame').offset().top - 5;
-var fireMagic = $('#fire-magic').offset().top - 5;
+var lion = $('#lion').offset().top ;
+var calFlame = $('#cal-flame').offset().top-15;
+var fireMagic = $('#fire-magic').offset().top-15;
 
 
 $(window).scroll(function(){
