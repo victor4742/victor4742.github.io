@@ -283,3 +283,9 @@ strong {
 .left-buffer {
 	margin-left: 20px;
 }
+
+@media (min-width: 767px;) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
