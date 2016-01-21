@@ -88,7 +88,7 @@ strong {
 	}
 
 
-	.grills-container {
+	.margin-right {
 		padding-right: 15%;
 	}
 
@@ -122,7 +122,7 @@ strong {
 		padding-left: 10%;
 		
 	}
-	.grills-container {
+	.margin-right {
 		padding-right: 15%;
 	}
 	#slide1  img{
@@ -153,6 +153,10 @@ strong {
 		min-height: 635px;
 		max-width: 100%;
 		height: auto;
+	}
+
+	.margin-right {
+		padding-right: 15%;
 	}
 
 	#slide2 img {
@@ -288,4 +292,9 @@ strong {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
+}
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
 }
