@@ -13,30 +13,6 @@
 
     	<link rel="stylesheet" type="text/css" href="css/tropicana.css">
     	<script type="text/javascript" src="js/tropicana.js"></script>
-    	<script src="https://maps.googleapis.com/maps/api/js"></script>
-   		<script>
-      		function initialize() {
-        	var mapCanvas = document.getElementById('map');
-        	 var myLatLng = {lat: 34.119127, lng: -117.812855};
-
-        	var mapOptions = {
-          		center: myLatLng,
-          		zoom: 17,
-          		mapTypeId: google.maps.MapTypeId.ROADMAP
-        	}
-
-        	var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-        	
-
-        	var map = new google.maps.Map(mapCanvas, mapOptions);
-        	var marker = new google.maps.Marker({  
-        		position: myLatLng,
-        		map: map,
-        		title: "Tropicana Outdoor Living"
-        	});
-      	}
-      	google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 	</head>
 
 	<body>
@@ -58,13 +34,13 @@
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
                 				<li><a href="index.html">Home</a></li>
-                				<li class="dropdown hidden-xs"><a href="grills.html"role="button" aria-haspopup="true" aria-expanded="false">Grills<span class="caret"></span></a>
+                				<li class="active dropdown hidden-xs"><a href="grills.html"role="button" aria-haspopup="true" aria-expanded="false">Grills<span class="caret"></span></a>
                 					<ul class="dropdown-menu">
                 						<li><a href="grills.html#lion">Lion</a></li>
                 						<li><a href="grills.html#cal-flame">Allegra</a></li>
                 						<li><a href="grills.html#fire-magic">Fire Magic</a></li>
                 					</ul>
-                				<li class="dropdown hidden-lg hidden-md hidden-sm"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grills<span class="caret"></span></a>
+                				<li class="active dropdown hidden-lg hidden-md hidden-sm"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grills<span class="caret"></span></a>
                 					<ul class="dropdown-menu">
                 						<li><a href="grills.html#lion">Lion</a></li>
                 						<li><a href="grills.html#cal-flame">Allegra</a></li>
@@ -95,7 +71,7 @@
                 						<li><a href="cal-spas.html">Cal Spas</a></li>
                 					</ul>
                 				</li>
-                				<li class="active"><a href="contact.html">Contact</a></li>
+                				<li><a href="contact.html">Contact</a></li>
                 				<li><a href="testimonies.html">Testimonies</a></li>
               				</ul>
 						</div>
@@ -106,97 +82,43 @@
 		<!-- End Navbar-->
 
 		<div class="content-wrapper">
-			<div class="container-fluid">
+			<div class="container-fluid margin-right">
 				<div class="row">
-					<div class="col-xs-offset-3 col-xs-9">
-						<h1>Contact Us</h1>
+					<div class="col-xs-12">
+						<h1 style="font-weight:bold; border-bottom:3px solid #EEE">32" Allegra Grill/Rostisserie</h1>
 					</div>
 				</div>
-				
-				<div class="row">
 
-					<div class="col-md-4 col-xs-12">
-						<div class="col-xs-12" style="font-size: 16px;">
-							<p>We would love to hear from you! Please fill out this form and one of our representatives will get in touch with you shortly.</p>
-						</div>
-
-						<form role="form" action="mailto:romero4742@hotmail.com" method="post">
-							<div class="form-group">
-								<label class="control-label col-xs-2" for="name">Name</label>
-								<div class="col-xs-11">
-									<input type="text" class="form-control" id="name" placeholder="Enter name">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-xs-2" for="email">Email</label>
-								<div class="col-xs-11">
-									<input type="email" class="form-control" id="email" placeholder="Enter email">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-xs-5" for="phone">Phone Number</label>
-								<div class="col-xs-11">
-									<input type="tel" class="form-control" id="phone" placeholder="Phone number">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label col-xs-2" for="message">Message</label>
-								<div class="col-xs-11">
-									<input type="text" class="form-control" id="message" placeholder="Optional message">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div class="col-xs-offset-4 col-xs-10">
-									<br>
-									<button type="submit" id= class="btn btn-default">Submit</button>
-								</div>
-							</div>
-
-							<div class="col-xs-offset-1 col-xs-11" style="margin-top:7%;">
-								<br>
-								<p><strong>949 North Cataract Ave, San Dimas, CA 91733</strong><br>
-								<strong>(909)599-4211<strong></p>
-							</div>
-						</form>
+				<div class="row top-buffer">
+					<div class="col-xs-12 hidden visible-xs nopadding">
+						<img class="img-responsive" src="images/allegra/32”-allegra-grill-rostisserie.jpg" alt='32" Allegra Grill'>
+					</div>
+					<div class="col-xs-12 col-sm-6  nopadding">
+						<ul>
+							<li>4 Main Burners at 15,000 BTUs each</li>
+                            <li>700 Square Inches of Total Cooking Area (510 Main Grilling Area)</li>
+                            <li>All Stainless Steel Construction</li>
+                            <li>304 Stainless Steel Cooking Grills</li>
+                            <li>Warming Rack</li>
+                            <li>Temperature Gauge</li>
+                            <li>Flame Throw Ignition System</li>
+                            <li>Double Inside Lights</li>
+                            <li>Pull Out Grease Tray</li>
+                            <li>Stainless Steel Flame Tamers</li>
+                            <li>Available in LP or NG</li>
+                            <li>Optional Cast Stainless Burners Available</li>
+                            <li>Cutout Dimensions: 30 1/2"W x 21"D x 9"H</li>
+                            <li>Infrared Back Burner</li>
+                            <li>Model Number: AHT-AL-32R</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 hidden-xs nopadding">
+                        <a href='images/allegra/32-allegra-grill-rostisserie.jpg'>
+						  <img class="img-responsive" src="images/allegra/32-allegra-grill-rostisserie.jpg" alt='32" Allegra Grill'>
+                        </a>
 					</div>
 
-					<div class="col-md-6 col-xs-12">
-						<div class="row">
-							<div class="col-xs-offset-1 col-xs-11">
-								<h4>Schedule an appointment and visit our shop! Get directions below.</h4>
-							
-
-							<div id="map"></div>
-							</div>
-						</div>
-					</div>
-
-					
 				</div>
-				<div class="row">
-					<div class="col-md-offset-5 col-xs-offset-1 col-md-7 col-xs-8">
-						<br>
-						<form action="http://maps.google.com/maps" method="get" target="_blank">
-							Enter your starting address:
-							<input type="text" name="saddr" />
-							<input type="hidden" name="daddr" value="949 North Cataract Ave, San Dimas, CA 91733" />
-							<input type="submit" value="get directions" />
-						</form>
-					</div>
-				</div>
-				
-			<!-- end container fluid -->	
-			</div>
-		</div>
 
-		
-
-
-		<script src="js/jquery-2.1.1.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
 	</body>
 </html>
