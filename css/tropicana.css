@@ -6,6 +6,26 @@ body {
   color: #404040;
 }
 
+body.custom-background {
+	background-image: url("../images/background-texture.png");
+	background-repeat: repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+
+.default-background {
+	background-color: white;
+}
+
+.header-features {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	text-align: center;
+	padding-bottom: 3px;
+}
+
+
 h1,h2,h3,h4,h5,h6, body {
   font-family: "Playfair Display",serif;
   font-weight: 300; 
