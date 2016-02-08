@@ -13,6 +13,10 @@ body.custom-background {
 	background-attachment: scroll;
 }
 
+.margin-bottom {
+	padding-bottom: 25px;
+}
+
 .default-background {
 	background-color: white;
 }
