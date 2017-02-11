@@ -63,11 +63,6 @@ strong {
 	font-size: 14px;
 }
 
-#map {
-	width: 500px;
-	height: 400px;
-
-}
 
 @media(min-width: 768px){
 	ul.nav li.dropdown:hover >ul.dropdown-menu{
@@ -348,4 +343,18 @@ strong {
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Specializes in BBQ Islands, Allegra Grills, and Cal Spas">
+    	<link rel="icon" href="images/tropicana_icon.png">
+
+    	<title>Tropicana Outdoor Living</title>
+
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    	<link rel="stylesheet" type="text/css" href="css/tropicana.css">
+    	<script type="text/javascript" src="js/tropicana.js"></script>
+    	<!--panellum -->
+    	<link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
+    	<script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+    	<link rel="stylesheet" type="text/css" href="css/myPanellum.css">
+    	<style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+	
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    #controls {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 3px;
+    }
+    .ctrl {
+        padding: 8px 5px;
+        width: 30px;
+        text-align: center;
+        background: rgba(200, 200, 200, 0.8);
+        display: inline-block;
+        cursor: pointer;
+    }
+    .ctrl:hover {
+        background: rgba(200, 200, 200, 1);
+    }
+    </style>
+
+	</head>
+
+	<body class="custom-background">
+		<!-- Begin Navbar -->
+		<div class="navbar-wrapper" id="home">
+			<div class="container">
+				<nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a class="" href="index.html"><img src="images/TropicanaLogo.png" alt="Tropicana" height="58" width="145"></img></a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+                				<li><a href="index.html">Home</a></li>
+                				<li ><a href="bbq-islands.html">BBQ Islands</a></li>
+                				<li class="dropdown hidden-xs"><a href="grills.html"role="button" aria-haspopup="true" aria-expanded="false">Grills<span class="caret"></span></a>
+                					<ul class="dropdown-menu">
+                						<li><a href="grills.html#lion">Lion</a></li>
+                						<li><a href="grills.html#allegra">Allegra</a></li>
+                						<li><a href="grills.html#fire-magic">Fire Magic</a></li>
+                					</ul>
+                				<li class="dropdown hidden-lg hidden-md hidden-sm"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grills<span class="caret"></span></a>
+                					<ul class="dropdown-menu">
+                						<li><a href="grills.html#lion">Lion</a></li>
+                						<li><a href="grills.html#allegra">Allegra</a></li>
+                						<li><a href="grills.html#fire-magic">Fire Magic</a></li>
+                					</ul>
+                				</li>
+                				<li><a href="patio.html">Patio</a></li>
+                				<li class="dropdown hidden-sm hidden-md hidden-lg"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Spas<span class="caret"></span></a>
+                					<ul class="dropdown-menu">
+                						<li><a href="swim-spas.html">Swim Spas</a></li>
+                						<li><a href="cal-spas.html">Cal Spas</a></li>
+                					</ul>
+                				</li>
+                				<li class="dropdown hidden-xs"><a href="spas.html" role="button" aria-haspopup="true" aria-expanded="false">Spas<span class="caret"></span></a>
+                					<ul class="dropdown-menu">
+                						<li><a href="swim-spas.html">Swim Spas</a></li>
+                						<li><a href="cal-spas.html">Cal Spas</a></li>
+                					</ul>
+                				</li>
+                                <li class="active"><a href="tour.html">Tour</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                				
+                				
+              				</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- End Navbar-->
+				<div class="site-wrapper">
+				<div class="cover-container">
+				<div class="cover">
+    				<div id="panorama">
+            			<div id="controls">
+			                <div class="ctrl" id="pan-up">▲</div>
+			                <div class="ctrl" id="pan-down">▼</div>
+			                <div class="ctrl" id="pan-left">◀</div>
+			                <div class="ctrl" id="pan-right">▶</div>
+			                <div class="ctrl" id="zoom-in">+</div>
+			                <div class="ctrl" id="zoom-out">-</div>
+			                <div class="ctrl" id="fullscreen">⤢</div>
+            			</div>
+    				</div>
+    			</div>
+			</div>
+		</div>
+	</div>
+
+		<script src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/tropicana.js"></script>
+
+
+
+<script>
+viewer = pannellum.viewer('panorama', {   
+    "default": {
+        "firstScene": "entrance",
+        "author": "Victor Romero",
+        "sceneFadeDuration": 1000,
+		"autoLoad" : true,
+		"showControls" : false,
+        //"hotSpotDebug": true,
+    },
+
+    "scenes": {
+        "entrance": {
+            "title": "Entrance",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "images/panorama/1.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Forklift",
+                    "sceneId": "forklift"
+                },
+                {
+                    "pitch" : -2,
+                    "yaw": 218,
+                    "type": "info",
+                    "text": "Pete's bench",
+                    "URL": "http://google.com"
+                }
+            ]
+        },
+
+        "forklift": {
+            "title": "Forklift",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/panorama/2.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 10,
+                    "type": "scene",
+                    "text": "Entrance",
+                    "sceneId": "entrance",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        }
+    }
+});
+
+//this function locks the pitch
+function lockPitch(){
+	if(viewer){
+		var renderer = viewer.getRenderer();
+		if(renderer){
+			var canvas = renderer.getCanvas();
+			if(canvas){
+				var vfov = 2 * Math.atan(Math.tan(viewer.getHfov() / 180 * Math.PI * 0.5) /
+                            (canvas.width / canvas.height)) / Math.PI * 180;
+				var minPitch = -vfov / 2;
+                var maxPitch =  vfov / 2;
+				viewer.setPitchBounds([minPitch-4,maxPitch-4]);
+                viewer.setPitch(0);
+			} else alert("lockpitch: no canvas");
+		} else alert("lockpitch: no renderer");
+	} else alert("lockpitch: no viewer");
+}
+
+
+
+viewer.on('load',lockPitch);
+
+// Make buttons work
+document.getElementById('pan-up').addEventListener('click', function(e) {
+    viewer.setPitch(viewer.getPitch() + 10);
+});
+document.getElementById('pan-down').addEventListener('click', function(e) {
+    viewer.setPitch(viewer.getPitch() - 10);
+});
+document.getElementById('pan-left').addEventListener('click', function(e) {
+    viewer.setYaw(viewer.getYaw() - 10);
+});
+document.getElementById('pan-right').addEventListener('click', function(e) {
+    viewer.setYaw(viewer.getYaw() + 10);
+});
+document.getElementById('zoom-in').addEventListener('click', function(e) {
+    viewer.setHfov(viewer.getHfov() - 10);
+});
+document.getElementById('zoom-out').addEventListener('click', function(e) {
+    viewer.setHfov(viewer.getHfov() + 10);
+});
+document.getElementById('fullscreen').addEventListener('click', function(e) {
+    viewer.toggleFullscreen();
+});
+</script>
+	</body>
+
+</html>
