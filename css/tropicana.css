@@ -83,99 +83,14 @@ strong {
   	max-height: 340px;
 }
 
-/* portrait & landscape phone*/
-@media (max-width: 480px){
 
-	.content-wrapper {
-		padding-top: 50px;
-		
-	}
-
-	#slide1 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-
-	#slide2 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-
-	#slide3 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-}
 
 /*Landscape phone to portrait tablet*/
-@media (max-width: 768px){
-
-	.content-wrapper {
-		padding-top: 50px;
-		padding-left: 15%;
-		
-	}
-
-
-	.margin-right {
-		padding-right: 15%;
-	}
-
-	#slide1 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;	
-	}
-
-	#slide2 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-
-	#slide3 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-}
 
 @media(max-width: 991px){
 	.allegra-container {
 	}
 }
-
-@media(max-width: 1200px){
-	.content-wrapper {
-		padding-top: 50px;
-		padding-left: 10%;
-		
-	}
-	.margin-right {
-		padding-right: 15%;
-	}
-	#slide1  img{
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-
-	#slide2 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-
-	#slide3 img {
-		min-height: 635px;
-		max-width: 100%;
-		height: auto;
-	}
-}
-
 
 /*Large Desktop*/
 @media (min-width: 1200px){
@@ -218,6 +133,93 @@ strong {
 		padding-top: 50px;
 		padding-left: 15%;
 		
+	}
+}
+
+@media(max-width: 1200px){
+	.content-wrapper {
+		padding-top: 50px;
+		padding-left: 10%;
+		
+	}
+	.margin-right {
+		padding-right: 15%;
+	}
+	#slide1  img{
+		min-height: 635px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#slide2 img {
+		min-height: 635px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#slide3 img {
+		min-height: 635px;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width: 768px){
+
+	.content-wrapper {
+		padding-top: 50px;
+		padding-left: 15%;
+		
+	}
+
+
+	.margin-right {
+		padding-right: 15%;
+	}
+
+	#slide1 img {
+		min-height: 635px;
+		max-width: 100%;
+		height: auto;	
+	}
+
+	#slide2 img {
+		min-height: 635px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#slide3 img {
+		min-height: 635px;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* portrait & landscape phone*/
+@media (max-width: 480px){
+
+	.content-wrapper {
+		padding-top: 100px;
+		
+	}
+
+	#slide1 img {
+		min-height: 520px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#slide2 img {
+		min-height: 520px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#slide3 img {
+		min-height: 520px;
+		max-width: 100%;
+		height: auto;
 	}
 }
 
